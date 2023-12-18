@@ -1,0 +1,22 @@
+
+
+<%- include("partials/header.ejs") %>
+
+
+    <main >
+        <h1>View your posts...</h1>
+        <div class="posts-view">
+            <% for (let i = 0; i < t3.length; i++) {%>
+                <h2> <%= t3[i] %></h2>
+                <p> <%= post3[i] %> </p> <br>
+                
+           <% } %>
+             
+            <form class="b1" action="/delete" method="get">       
+                <input type="button" value="Delete">
+            </form>
+        </div>
+    </main>
+
+
+<%-include("partials/footer.ejs") %>

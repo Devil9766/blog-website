@@ -1,0 +1,18 @@
+
+
+<%- include("partials/header.ejs") %>
+
+    <main class="create-post-container">
+        <h1>Create your post :</h1>
+        
+        <div class="post-container">
+
+            <form id="same-box" action="/submit" method="post">
+                <input class="title2" type="text" name="titleN" placeholder="write your title...." required>
+                <textarea   class="info" type="text" name="inputText" placeholder="write something..."  required>  </textarea><br>
+                <input class="button" type="submit"  value="SUBMIT">
+            </form>
+        </div>
+    </main>
+
+<%-include("partials/footer.ejs") %>
